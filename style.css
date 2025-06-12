@@ -1274,6 +1274,7 @@ footer p{
     border-radius: 25px;
     height: 100%;
     width: 100%;
+    border: 2px solid var(--bleu);
 }
 
 .contacter div div:last-child{
