@@ -8,46 +8,128 @@
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="index.html#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="index.html#diplomes"><li>Diplômes</li></a>
-                <a href="index.html#contact"><li>Me contacter</li></a>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="comp4">
+            <div>
+                <h2>— Compétence 4 —</h2>
+                <p>2023-2024</p>
+            </div>
+
+            <h1>Création de bases de données</h1>
+
+            <div>
+                <article>
+                    <h3>Compétence 4</h3>
+                    <hr>
+                    <p>Concevoir et mettre en place une base de données à partir d'un cahier des charges client</p>
+                </article>
+
+                <article>
+                    <h3>Déroulé & explication du projet</h3>
+                    <hr>
+                    <p>Exlpications du jeu :
+                        <ol>
+                            <li>Critique de la base de données existante + proposition d'un nouveau modèle (incluant les correstions) et sa transformation en modèle relationnel (script SQL)</li>
+                            <li>Répondre aux différentes requêtes (livrable sous forme de script SQL)</li>
+                            <li>Extension de la base de données (diagramme de classe + implémentation SQL) + proposition d'un jeu de données test pour peupler la nouvelle base de données</li>
+                        </ol>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Contexte</h3>
+                    <hr>
+                    <p>
+                        <strong>Projet SAÉ S1.04 - Conception d'une base de données football:</strong> Conception en binôme d'un système de gestion des championnats de football français. Le projet débute par l'identification des dépendances fonctionnelles et la création d'un diagramme de classes UML représentant clubs, équipes, joueurs, matches et résultats. La seconde partie consiste à traduire ce modèle conceptuel en schéma relationnel avec Tutorial D, en respectant les contraintes d'intégrité référentielles et les règles de nommage établies.
+                    </p>
+                </article>
+
+                <img src="images/104.png"  alt="sae103">
+
+
+                <article>
+                    <h3>Technologies utilisés</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://www.uml.org/">
+                                <img src="images/uml.png" alt="uml">
+                                Langage UML
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.postgresql.org/">
+                                <img src="images/104.png" alt="PostgreSQL">
+                                PostgreSQL
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.visual-paradigm.com/support/documents/">
+                                <img src="images/visualparadigm.png" alt="visualparadigm">
+                                Visual paradigm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.notion.com/fr">
+                                <img src="images/notion.png" alt="notion">
+                                Notion
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </main>
         <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>

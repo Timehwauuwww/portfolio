@@ -2,52 +2,158 @@
 <html lang="fr">
     <head>
         <title>PORTFOLIO — Timéo LEMOING</title>
+        <link rel="logo" href="images/avatar_chibi.png" type="image/png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="index.html#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="index.html#diplomes"><li>Diplômes</li></a>
-                <a href="index.html#contact"><li>Me contacter</li></a>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="comp2">
+            <div>
+                <h2>— Compétence 2 —</h2>
+                <p>2024-2025</p>
+            </div>
+
+            <h1>Jeu du serpent</h1>
+
+            <div>
+                <article>
+                    <h3>Compétence 2</h3>
+                    <hr>
+                    <p>Appréhender et construire des algorithmes</p>
+                </article>
+
+                <article>
+                    <h3>Déroulé & explication du projet</h3>
+                    <hr>
+                    <p>Explications du jeu (SAE 1.01)
+                        <ul>
+                            <li>Le joueur contrôle un serpent qui se déplace continuellement sur un écran délimité</li>
+                            <li>Le but est de diriger le serpent pour qu'il mange des objets (généralement représentés comme de la nourriture ou des pommes)</li>
+                            <li>À chaque fois que le serpent mange une pomme, il grandit d'un segment</li>
+                            <li>Le jeu devient progressivement plus difficile car le serpent s'allonge et occupe plus d'espace</li>
+                            <li>Le joueur doit éviter que le serpent ne touche les murs de l'aire de jeu ou son propre corps</li>
+                            <li>Le jeu se termine si :
+                                <ul>
+                                    <li>le serpent entre en collision avec un mur ou avec lui-même</li>
+                                    <li>le serpent a manger 10 pommes</li>
+                                </ul> 
+                            </li>
+                            <li>L'objectif est de faire manger au serpent 10 pommes</li>
+                        </ul>
+                    </p>
+                    <p>Explications du jeu (SAE 1.02)
+                        <ul>
+                            <li>Le principe du jeu est le même sauf que le serpent est automatique</li>
+                            <li>Le serpent se déplace automatiquement</li>
+                            <li>Il calcule à chaque pomme mangée la distance optimale pour aller manger la suivante</li>
+                            <li>Il se déplace de manière à esquiver les obstacles et murs du plateau</li>
+                            <li>Le jeu se termine si le serpent a manger 10 pommes</li>
+                        </ul>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Contexte</h3>
+                    <hr>
+                    <p>
+                        <strong>Projet SAÉ S1.01 - Jeu du Snake interactif:</strong>  Développement individuel d'un jeu Snake en mode console où le joueur dirige un serpent avec les touches ZQSD pour manger des pommes. Le serpent grandit et accélère à chaque pomme mangée. Le programme sera développé en 4 versions incrémentales.
+                    </p>
+                    <p>
+                        <strong>Projet SAÉ S1.02 - Snake autonome:</strong> Développement en binôme d'une version autonome du Snake où le serpent se déplace automatiquement pour manger les pommes le plus efficacement possible. Les positions des pommes et obstacles sont prédéfinies. L'efficacité est mesurée par le nombre de déplacements et le temps CPU. Ce projet comporte également 4 versions incrémentales.
+                    </p>
+                </article>
+
+                <figure>
+                    <img src="images/101.png"  alt="sae101">
+                    <img src="images/102.png"  alt="sae102">
+                </figure>
+
+                <article>
+                    <h3>Technologies utilisés</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://code.visualstudio.com/docs">
+                                <img src="images/vsc.png" alt="vsc">
+                                Visual Studio Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://workspace.google.com/intl/fr/products/drive/">
+                                <img src="images/ggdrive.png" alt="ggdrive">
+                                Google DRIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://devdocs.io/c/">
+                                <img src="images/c.png" alt="Langage c">
+                                Langage C
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/terminal.png" alt="Terminal">
+                                Terminal
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </main>
         <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>

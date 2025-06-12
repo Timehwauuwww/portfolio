@@ -8,104 +8,131 @@
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="index.html#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="index.html#diplomes"><li>Diplômes</li></a>
-                <a href="index.html#contact"><li>Me contacter</li></a>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
         <main class="comp1">
-            <article>
-                <div>
-                    <h2>— Compétence 1 —</h2>
-                    <p>2023-2024</p>
-                </div>
+            <div>
+                <h2>— Compétence 1 —</h2>
+                <p>2023-2024</p>
+            </div>
 
-                <h1>Jeu du 2048</h1>
+            <h1>Jeu du 2048</h1>
 
+            <div>
+                <article>
+                    <h3>Compétence 1</h3>
+                    <hr>
+                    <p>Développer des applications informatiques simples</p>
+                </article>
 
-                <div class="grand-b">
-                    <div class="bloc1">
-                        <div>
-                            <h3>Compétence</h3>
-                            <hr>
-                            <p>Développer des applications informatiques simples</p>
-                        </div>
-
-                        <div>
-                            <h3>Principe du 2048</h3>
-                            <hr>
-                            <ul>
-                                <li>Exlpications du jeu
-                                    <ul>
-                                        <li>Le jeu se joue sur une grille 4×4</li>
-                                        <li>Il commence avec deux tuiles (généralement de valeur 2)</li>
-                                        <li>Le joueur déplace toutes les tuiles simultanément vers l'une des quatre directions (haut, bas, gauche, droite)</li>
-                                        <li>Après chaque mouvement, une nouvelle tuile (de valeur 2 ou 4) apparaît aléatoirement sur la grille</li>
-                                        <li>Quand deux tuiles de même valeur se touchent lors d'un déplacement, elles fusionnent en une seule tuile dont la valeur est la somme des deux</li>
-                                        <li>L'objectif est d'obtenir une tuile de valeur 2048 (d'où le nom du jeu)</li>
-                                        <li>Le jeu se termine quand il n'y a plus de mouvements possibles (grille pleine sans fusions possibles) </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3>Contexte</h3>
-                            <hr>
-                            <p>Développer des applications informatiques simples</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img src="images/2048.png" alt="2048">
-                        <div>
-                        <h3>Technologies & outils utilisés</h3>
-                        <hr>
+                <article>
+                    <h3>Principe du 2048</h3>
+                    <hr>
+                    <p>Explications du jeu :
                         <ul>
-                            <li>VSC</li>
-                            <li>Google Drvie</li>
-                            <li>Langage python</li>
-                            <li>Cahier de test</li>
-                            <li>Trello</li>
+                            <li>Le jeu se joue sur une grille 4×4</li>
+                            <li>Il commence avec deux tuiles (généralement de valeur 2)</li>
+                            <li>Le joueur déplace toutes les tuiles simultanément vers l'une des quatre directions (haut, bas, gauche, droite)</li>
+                            <li>Après chaque mouvement, une nouvelle tuile (de valeur 2 ou 4) apparaît aléatoirement sur la grille</li>
+                            <li>Quand deux tuiles de même valeur se touchent lors d'un déplacement, elles fusionnent en une seule tuile dont la valeur est la somme des deux</li>
+                            <li>L'objectif est d'obtenir une tuile de valeur 2048 (d'où le nom du jeu)</li>
+                            <li>Le jeu se termine quand il n'y a plus de mouvements possibles (grille pleine sans fusions possibles) </li>
                         </ul>
-                    </div>
-                </div>
-                
-            </article>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Contexte</h3>
+                    <hr>
+                    <p>
+                        <strong>Projet scolaire - 2048 avec interface graphique :</strong> Développement en binôme d’un jeu 2048 en Python durant l’année de Terminale. Le joueur fusionne des tuiles contenant des puissances de 2 pour atteindre le score maximal. Le projet intègre une interface graphique réalisée avec la bibliothèque Kivy pour une meilleure expérience utilisateur. L’objectif était de reproduire fidèlement les règles du jeu original tout en explorant la gestion d’événements, l’affichage dynamique et la logique de fusion. Le développement s’est fait en plusieurs étapes pour tester et améliorer progressivement les fonctionnalités du jeu.
+                    </p>
+                </article>
+
+                <img src="images/2048.png"  alt="sae103">
+
+                <article>
+                    <h3>Technologies utilisés</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://code.visualstudio.com/docs">
+                                <img src="images/vsc.png" alt="vsc">
+                                Visual Studio Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://workspace.google.com/intl/fr/products/drive/">
+                                <img src="images/ggdrive.png" alt="ggdrive">
+                                Google DRIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.python.org/">
+                                <img src="images/python.png" alt="python">
+                                Langage python
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://trello.com/fr?campaign=19269516403&adgroup=148159472287&targetid=kwd-3609071522&matchtype=e&network=g&device=c&device_model=&creative=641585205818&keyword=trello&placement=&target=&ds_eid=700000001557344&ds_e1=GOOGLE&gad_source=1&gad_campaignid=19269516403&gbraid=0AAAAADMO9YgtFfX6YfVRaWMmsepZUqlrc&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c92qwf9mHmCcu_Bj6IkI8urOkvrkHZV1vl7nS3f65ASGvINL7aWo_RoCIekQAvD_BwE">
+                                <img src="images/trello.png" alt="trello">
+                                Trello
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </main>
         <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>

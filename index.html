@@ -2,19 +2,30 @@
 <html lang="fr">
     <head>
         <title>PORTFOLIO — Timéo LEMOING</title>
+        <link rel="icon" href="images/avatar_chibi.png" type="image/png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="#diplomes"><li>Diplômes</li></a>
-                <a href="#contact"><li>Me contacter</li></a>
+                <li><a href="#index.html/propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
-        <header id="propos">
+        <header>
             <h1>Timéo LEMOING</h1>
             <p>étudiant en informatique</p>
             <figure>
@@ -23,7 +34,7 @@
                 <img src="images/img_h2.jpg" alt="image header 2">
                 <img src="images/img_h3.jpg" alt="image header 3">
             </figure>
-            <article>
+            <article id="propos">
                 <h2>— À propos —</h2>
                 <div>
                     <div>
@@ -54,68 +65,103 @@
                         <a href="comp3.html"><img src="images/103.png" alt="image sae103"></a>
                         <a href="comp4.html"><img src="images/104.png" alt="image sae104"></a>
                         <a href="comp5.html"><img src="images/105.png" alt="image sae105"></a>
-                    </div>
-                    <div>
                         <a href="comp6.html"><img src="images/106.png" alt="image sae106"></a>
                         <a href="comp2.html"><img src="images/102.png" alt="image sae102"></a>
-                    </div>
+                    </div>      
                 </div>
-                
-
             </article>
 
-            <h1 id="diplomes">— Diplômes —</h1>
+            <h1>— Diplômes —</h1>
             <article>
-                <div>
-                    <div>
-                        <h3>Baccalauréat Général</h3>
-                        <hr>
-                        <p>Spécialités : Mathématiques, Sciences Numériques et Informatiques</p>
-                        <p>Option : Maths expert</p>
-                        <p>Lycée La Fontaine des Eaux - Dinan, France</p>
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-year">
+                            <div></div>
+                            <p>2024 - 2025</p>
+                        </div>
+                        <div class="content">
+                            <a href="https://iut-lannion.univ-rennes.fr/informatique">
+                                <h3>BUT Informartique</h3>
+                                <hr>
+                                <p>
+                                Actuellement à l’ IUT de Lannion , ce cursus me permet d’approfondir mes connaissances en développement web, gestion de projet, réseaux, systèmes et sécurité informatique.
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Études BUT Informatique</h3>
-                        <hr>
-                        <p>
-                            Actuellement à l’ IUT de Lannion , ce cursus me permet d’approfondir mes connaissances en développement web, gestion de projet, réseaux, systèmes et sécurité informatique.
-                        </p>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-year">
+                            <div></div>
+                            <p>2021 - 2022</p>
+                        </div>
+                        <div class="content">
+                            <h3>Baccalauréat Général</h3>
+                            <hr>
+                            <p>
+                                Spécialités : Mathématiques, Sciences Numériques et Informatiques<br>
+                                Option : Maths expert<br>
+                                Avec mention<br>
+                                Lycée La Fontaine des Eaux - Dinan, France
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-year">
+                            <div></div>
+                            <p>2019 - 2021</p>
+                        </div>
+                        <div class="content">
+                            <h3>Diplôme National du Brevet</h3>
+                            <hr>
+                            <p>
+                                Avec mention<br>
+                                Collège Broussais - Dinan, France
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </article>
         </main>
-        <footer id="contact">
+        <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>

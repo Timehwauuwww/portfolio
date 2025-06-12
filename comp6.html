@@ -8,46 +8,130 @@
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="index.html#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="index.html#diplomes"><li>Diplômes</li></a>
-                <a href="index.html#contact"><li>Me contacter</li></a>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="comp6">
+            <div>
+                <h2>— Compétence 6 —</h2>
+                <p>2024-2025</p>
+            </div>
+
+            <h1>Environnement économique</h1>
+
+            <div>
+                <article>
+                    <h3>Compétence 6</h3>
+                    <hr>
+                    <p>Identifier ses aptitudes pour travailler dans une équipe</p>
+                </article>
+
+                <article>
+                    <h3>Déroulé & explication du projet</h3>
+                    <hr>
+                    <p>Étapes du projet :
+                        <ol>
+                            <li>Organiser le travail d'équipe à l'aide d'outils (fixer ses objectifs , partager des tâches et planifier le travail)</li>
+                            <li>Organiser sa recherche documentaire sur une entreprise et mettre en place des outils de veille (mots clés, sources ; lecture , analyse et tri des informations relative à l'organisation et la RSE portant sur le développement et transition écologique)</li>
+                            <li>Préparer une synthèse écrite </li>
+                            <li>Présenter son travail à l'aide d'outils web (canva, prézi, genially)</li>
+                            <li>Présenter son travail oralement individuellement et en équipe</li>
+                        </ol>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Contexte</h3>
+                    <hr>
+                    <p>
+                        <strong>Projet SAÉ S1.06 - Identifier ses aptitudes pour travailler en équipe:</strong> Projet en équipe de 4 étudiants visant à développer les compétences interpersonnelles et la compréhension de l'écosystème numérique. Le travail s'articule autour de l'analyse d'une organisation choisie par l'équipe, incluant ses caractéristiques, son diagnostic externe et sa politique RSE en matière d'empreinte écologique. Le projet comprend trois évaluations : une soutenance orale intermédiaire de 5 minutes, un dossier écrit de synthèse, et une présentation finale de 10 minutes, complétées par une évaluation individuelle en salle de contrôle.
+                    </p>
+                </article>
+
+                <img src="images/106.png"  alt="sae106">
+
+
+                <article>
+                    <h3>Technologies utilisés</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://code.visualstudio.com/docs">
+                                <img src="images/vsc.png" alt="vsc">
+                                Visual Studio Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://workspace.google.com/intl/fr/products/drive/">
+                                <img src="images/ggdrive.png" alt="ggdrive">
+                                Google DRIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://workspace.google.com/intl/fr/products/docs/">
+                                <img src="images/ggdoc.png" alt="ggdoc">
+                                Google Doc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.canva.com/fr_fr/docs/">
+                                <img src="images/canva.png" alt="Canva">
+                                Canva
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </main>
         <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>

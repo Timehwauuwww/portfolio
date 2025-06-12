@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>PORTFOLIO — Timéo LEMOING</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><p>TLM</p></a>
+            <ul>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
+            </ul>
+        </nav>
+
+        <main class="contacter">
+            <h1>Contactez-moi</h1>
+            <div>
+                <div>
+                    <h2>Mon contact :</h2>
+                    <section>
+                        <a href="tel:+33766296114">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Téléphone" />
+                            +33 7 66 29 61 14
+                        </a>
+                        <a href="mailto:lemoingtimeo@gmail.com">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" />
+                            lemoingtimeo@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/tim%C3%A9o-le-moing-2a7786195/?trk=opento_sprofile_goalscard" target="_blank" class="contact-link">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
+                            LinkedIn
+                        </a>
+                    </section>
+                </div>
+                <div>
+                    <h2>Localisation :</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84189.11579148426!2d-3.552139764295175!3d48.745418476365884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122b8ac523c539%3A0x40ca5cd36e63400!2s22300%20Lannion!5e0!3m2!1sfr!2sfr!4v1747386646295!5m2!1sfr!2sfr"
+                        loading="lazy"
+                        aria-label="Carte de Lannion"
+                    ></iframe>
+                </div>
+                <div>
+                    <h2>N'hésitez pas à m'envoyer un message !</h2>
+                    <form action="https://formspree.io/f/xnnddpol" method="POST">
+                        <label>
+                            <p>Votre email :</p>
+                            <input type="email" name="email" required />
+                        </label>
+                        <label>
+                            <p>Votre message :</p>
+                            <textarea name="message" required></textarea>
+                        </label>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
+                    </a>
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
+                </div>
+
+                <div class="contact">
+                    <h2>— Me contacter —</h2>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tim%C3%A9o-le-moing-2a7786195/?trk=opento_sprofile_goalscard">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>© 2025 - Timéo LEMOING - 22300 Lannion</p>
+        </footer>
+    </body>
+</html>

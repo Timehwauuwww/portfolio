@@ -8,46 +8,154 @@
         <nav>
             <a href="index.html"><p>TLM</p></a>
             <ul>
-                <a href="index.html#propos"><li>À propos</li></a>
-                <a><li>Compétences</li></a>
-                <a href="index.html#diplomes"><li>Diplômes</li></a>
-                <a href="index.html#contact"><li>Me contacter</li></a>
+                <li><a href="index.html#propos">À propos</a></li>
+                <li class="menu-comp">
+                    <a href="#">Compétences</a>
+                    <ul class="sous-menu-comp">
+                        <li><a href="comp1.html">Compétence 1</a></li>
+                        <li><a href="comp2.html">Compétence 2</a></li>
+                        <li><a href="comp3.html">Compétence 3</a></li>
+                        <li><a href="comp4.html">Compétence 4</a></li>
+                        <li><a href="comp5.html">Compétence 5</a></li>
+                        <li><a href="comp6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Me contacter</a></li>
+                <li><a href="CV_BUT_INFO.pdf" download>Mon CV</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="comp3">
+            <div>
+                <h2>— Compétence 3 —</h2>
+                <p>2024-2025</p>
+            </div>
+
+            <h1>Automatisation d’un site grâce à Docker </h1>
+
+            <div>
+                <article>
+                    <h3>Compétence 3</h3>
+                    <hr>
+                    <p>Installer et configurer un poste de travail</p>
+                </article>
+
+                <article>
+                    <h3>Déroulé & explication du projet</h3>
+                    <hr>
+                    <p>
+                        Étapes du projet : 
+                        <ol>
+                            <li>Installation d’un poste pour le développement : mise en œuvre d'une chaîne de processus (workflow) s'intégrant dans un environnement de développement.</li>
+                            <li>Identifier les outils nécessaires</li>
+                            <li>Préparation des fichiers de test (donnés et configs)</li>
+                            <li>Proposition d'un workflow enchaînant les outils</li>
+                            <li>Production finale et "scriptage" du workflow</li>
+                        </ol>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Contexte</h3>
+                    <hr>
+                    <p>
+                        <strong>Projet SAÉ S1.03 - Installation d'un poste de développement:</strong> Développement en équipe d'une chaîne de traitement automatisée pour les fichiers du site Web des JO Paris 2024. L'équipe doit analyser différents types de fichiers (images, textes, tableaux Excel), les convertir aux formats requis (WebP, CSV, texte structuré) en utilisant Docker et des outils comme ImageMagick. Le projet inclut le traitement automatisé des médailles olympiques avec calcul de totaux, tri par classement et téléchargement dynamique de drapeaux, ainsi que la génération d'un PDF final du tableau des médailles.
+                    </p>
+                </article>
+
+                <img src="images/103.png"  alt="sae103">
+
+                <article>
+                    <h3>Technologies utilisés</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://code.visualstudio.com/docs">
+                                <img src="images/vsc.png" alt="vsc">
+                                Visual Studio Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://workspace.google.com/intl/fr/products/drive/">
+                                <img src="images/ggdrive.png" alt="ggdrive">
+                                Google DRIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://devdocs.io/bash/">
+                                <img src="images/bash.png" alt="Bash">
+                                Langage Bash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.php.net/manual/fr/index.php">
+                                <img src="images/php.png" alt="php">
+                                Langage PHP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.docker.com/">
+                                <img src="images/docker.png" alt="docker">
+                                Docker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/terminal.png" alt="terminal">
+                                Terminal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+                                <img src="images/html.png" alt="html">
+                                Langage HTML
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://developer.mozilla.org/en-US/docs/Web/CSS">
+                                <img src="images/css.png" alt="css">
+                                Langage CSS
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </main>
         <footer>
             <div>
                 <div>
                     <h2>— N'hésitez pas à me contacter pour tout renseignement supplémentaire —</h2>
-                    <a href="">
-                        Télécharger mon CV
-
-                        <div class="download-logo">
-                            <div class="container"></div>
-                            <div class="arrow-line"></div>
-                            <div class="arrow-head"></div>
-                        </div>  
+                    <a onclick="window.location.href='CV_BUT_INFO.pdf'">
+                        Télécharger mon CV 
                     </a>
-                    
+                    <div class="download-logo">
+                        <div class="container"></div>
+                        <div class="arrow-line"></div>
+                        <div class="arrow-head"></div>
+                    </div> 
                 </div>
 
                 <div class="contact">
                     <h2>— Me contacter —</h2>
-                    <article>
-                        <img src="images/mail.png" alt="mail">
-                        <adress>
-                            <a href="mailto:lemoingtimeo@gmail.com">lemoingtimeo@gmail.com</a>
-                        </adress>
-                    </article>
-                    <article>
-                        <img src="images/tel.png" alt="téléphone">
-                        <a>33+ 07 66 29 61 14</a>
-                    </article>
-                    <article>
-                        <img src="images/linkedin.png" alt="linkedin">
-                        <a>Timéo LEMOING</a>
-                    </article>
+                    <ul>
+                        <li>
+                            <a href="mailto:lemoingtimeo@gmail.com">
+                                <img src="images/mail.png" alt="mail">
+                                lemoingtimeo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33766296114">
+                                <img src="images/tel.png" alt="tel">
+                                33+ 07 66 29 61 14
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkedin.png" alt="linkedin">
+                                Timéo LEMOING
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr>
