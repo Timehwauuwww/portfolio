@@ -1204,15 +1204,16 @@ footer p{
 .contacter{
     font-family: "Roboto Flex", sans-serif;
     color: var(--bleu);
+    padding: 10px;
 }
 
 .contacter h1{
     font-family: "Mogra", system-ui;
 }
 
-.contacter div{
+.contacter > div{
     display: grid;
-    grid-template-columns: repeat(2) 40%;
+    grid-template-columns: 70% 30%;
     gap: 20px;
 }
 
@@ -1269,3 +1270,48 @@ footer p{
     height: auto;
 }
 
+.contacter div div:nth-child(2) iframe{
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.contacter div div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacter div div:last-child h2, p{
+    text-align: center;
+}
+
+.contacter div div:last-child form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacter div div:last-child form input, textarea{
+    border-radius: 25px;
+    border: 2px solid var(--bleu);
+    min-width: 400px;
+}
+
+.contacter div div:last-child form textarea{
+    border-radius: 25px;
+    border: 2px solid var(--bleu);
+    min-width: 400px;
+    height: 100px;
+}
+
+.contacter div div:last-child form button{
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 25px;
+    height: 15%;
+    width: 30%;
+    font-size: 1rem;
+    padding: 5px;
+}
