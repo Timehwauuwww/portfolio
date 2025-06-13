@@ -1360,11 +1360,11 @@ footer p{
 }
 
 .comp1 > div:last-child > img:hover,
-.comp2 > div:last-child > figure > img:hover,
-.comp3 > div:last-child > img:hover,
-.comp4 > div:last-child > img:hover,
+.comp2 > div:last-child > figure >  a > img:hover,
+.comp3 > div:last-child > a > img:hover,
+.comp4 > div:last-child > a > img:hover,
 .comp5 > div:last-child > img:hover,
-.comp6 > div:last-child > img:hover {
+.comp6 > div:last-child > a > img:hover {
     animation: swingImage 0.5s ease;
 }
 
@@ -1374,4 +1374,16 @@ footer p{
     50%  { transform: rotate(-3deg); }
     75%  { transform: rotate(2deg); }
     100% { transform: rotate(0deg); }
+}
+
+.comp2 figure a{
+    height: 100%;
+}
+
+.comp3 > div:last-child > a,
+.comp4 > div:last-child > a,
+.comp6 > div:last-child > a{
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1/3;
 }
