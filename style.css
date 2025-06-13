@@ -1243,7 +1243,9 @@ footer p{
 .contacter{
     font-family: "Roboto Flex", sans-serif;
     color: var(--bleu);
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 98.7%;
 }
 
 .contacter h1{
@@ -1251,6 +1253,7 @@ footer p{
 }
 
 .contacter > div{
+    position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 20px;
@@ -1333,10 +1336,10 @@ footer p{
     gap: 10px;
 }
 
-.contacter div div:last-child form input, textarea{
+.contacter div div:last-child form input, textarea {
+    min-width: 400px;
     border-radius: 25px;
     border: 2px solid var(--bleu);
-    min-width: 400px;
 }
 
 .contacter div div:last-child form textarea{
@@ -1354,4 +1357,21 @@ footer p{
     width: 30%;
     font-size: 1rem;
     padding: 5px;
+}
+
+.comp1 > div:last-child > img:hover,
+.comp2 > div:last-child > figure > img:hover,
+.comp3 > div:last-child > img:hover,
+.comp4 > div:last-child > img:hover,
+.comp5 > div:last-child > img:hover,
+.comp6 > div:last-child > img:hover {
+    animation: swingImage 0.5s ease;
+}
+
+@keyframes swingImage {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(3deg); }
+    50%  { transform: rotate(-3deg); }
+    75%  { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
 }
