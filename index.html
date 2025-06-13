@@ -167,5 +167,22 @@
             <hr>
             <p>© 2025 - Timéo LEMOING - 22300 Lannion</p>
         </footer>
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optionnel : ne plus observer une fois visible
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1 // visible à 10%
+            });
+
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                observer.observe(item);
+            });
+        </script>
     </body>
 </html>

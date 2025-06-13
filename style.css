@@ -439,6 +439,12 @@ footer p{
     position: relative;
     border: 1px solid var(--bleu);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index article div div:first-child img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px var(--bleu);
 }
 
 .index article div div:first-child a:nth-child(5){
@@ -475,6 +481,14 @@ footer p{
     width: 50%;
     box-sizing: border-box;
     padding: 0 45px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .timeline-item.left {
@@ -555,6 +569,10 @@ footer p{
 
 .comp1 h1, h2{
     font-family: "Mogra", system-ui;
+}
+
+.comp1 p{
+    text-align: left;
 }
 
 .comp1 div:first-child{
@@ -661,6 +679,10 @@ footer p{
 
 .comp2 h1, h2{
     font-family: "Mogra", system-ui;
+}
+
+.comp2 p{
+    text-align: left;
 }
 
 .comp2 div:first-child{
@@ -790,6 +812,10 @@ footer p{
     font-family: "Mogra", system-ui;
 }
 
+.comp3 p{
+    text-align: left;
+}
+
 .comp3 div:first-child{
     display: flex;
     align-items: center;
@@ -891,6 +917,10 @@ footer p{
     font-family: "Mogra", system-ui;
 }
 
+.comp4 p{
+    text-align: left;
+}
+
 .comp4 div:first-child{
     display: flex;
     align-items: center;
@@ -990,6 +1020,10 @@ footer p{
 
 .comp5 h1, h2{
     font-family: "Mogra", system-ui;
+}
+
+.comp5 p{
+    text-align: left;
 }
 
 .comp5 div:first-child{
@@ -1108,6 +1142,10 @@ footer p{
 
 .comp6 h1, h2{
     font-family: "Mogra", system-ui;
+}
+
+.comp6 p{
+    text-align: left;
 }
 
 .comp6 div:first-child{
