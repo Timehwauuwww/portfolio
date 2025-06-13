@@ -219,7 +219,7 @@ header article p a:hover{
 }
 
 header article div img{
-    border-radius: 10px;
+    border-radius: 50%;
     width: 15rem;
     height: auto;
 }
